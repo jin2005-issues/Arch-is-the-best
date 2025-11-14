@@ -1,0 +1,17 @@
+---
+name: Arch Linux is the best
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - '/**'
+    push_request:
+      paths:
+        - '/**'
+      branches:
+        - master
+
+      permissions:
+        contents: read
