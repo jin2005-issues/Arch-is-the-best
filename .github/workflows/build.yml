@@ -22,4 +22,6 @@ jobs:
         include:
           steps:
             - id: checkout
-              uses:action/checkout@v5
+              uses: action/checkout@v5
+
+              run: |
