@@ -13,5 +13,13 @@ on:
       branches:
         - master
 
-      permissions:
-        contents: read
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          steps:
+            - id: checkout
+              uses:action/checkout@v5
