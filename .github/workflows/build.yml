@@ -25,3 +25,4 @@ jobs:
               uses: action/checkout@v5
 
               run: |
+                vim ~/Arch-is-the-best/Arch\ is\ the\ best.sh \
